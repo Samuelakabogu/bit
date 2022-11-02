@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 200vh;
+    width: 100%;
+}
+.listtext h2{
+    font-size: 14.4px;
+    font-weight: 400;
+}
+.listtext p{
+    font-size: 11.2px;
+    font-weight: 300;
+}
+.listtext{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.hovercont{
+    display: block;
+    height: 60px;   
+}
+.displayed{
+    display: none;
+    margin-top: 18px;
+    height: max-content;
+    padding-bottom: 20px;
+    background-color: white;
+    width: 300px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+.icon{
+    width:30px;
+}
+.icon1{
+    width: 30px;
+}
+.texts{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 15px;
+    width: 300px;
+}
+.texts:hover{
+    background-color: rgb(20, 20, 43);
+    transition: .47s;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.hover{
+    display: block;
+    height: 20px;
+}
+.subhero2 h1{
+    font-size: 16px;
+    font-weight: 400;
+}
+.content li:hover .displayed{
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+.links{
+    display: flex;
+    gap: 50px;
+}
+.move{
+    position: relative;
+    right: 18px;
+    display: flex;
+    gap: 32px;
+}
+nav{
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+.arrow{
+    position: relative;
+    left: 62px;
+    bottom: 18px;
+}
+.arrow1{
+    position: relative;
+    left: 67px;
+    bottom: 18px;
+}
+.hover h1{
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+}
+.logo{
+    position: relative;
+    bottom: 2px;
+}
+nav{
+    background-color: rgb(247,247, 252);
+    height: 14.2vh;
+    gap: 162px;
+    padding-left: 62px;
+    display: flex;
+    align-items: center;
+}
+.hero{
+    background-color: rgb(20,20, 43);
+    height: 90vh;
+}
+nav a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    color: inherit;
+}
+.sign{
+    position: relative;
+    left: 24.5vh;
+}
+.create{
+    padding: 18.5px 42px;
+    background-color: rgb(3, 164, 56);
+    border-radius: 50px;
+    color: white;
+    margin-left: 20px;
+    text-align: center;
+    position: relative;
+    top: 1px;
+}
+.create:hover{
+    background-color: rgb(1, 110, 37);
+    transition: 1s;
+}
+.bhero{
+    display: flex;
+    gap: 120px;
+    padding-top: 28px;
+}
+.subhero{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 27px 67px;
+}
+.subhero h1{
+    font-size: 50.542px;
+    line-height: 50.542px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: white;
+}
+.subhero p{
+    color:rgb(252, 252, 252);
+    font-size: 16.392px;
+    line-height: 25.954px;
+    letter-spacing: -0.5px;
+    font-weight: 200;
+    width: 420px;
+}
+span{
+    color: rgb(161,239,187);
+}
+.start{
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 17px;
+    font-weight: 400;
+    background-color: rgb(3,164,56);
+    text-decoration: none;
+    width: 200px;
+}
+.start:hover{
+    background-color: rgb(1, 110, 37);
+    transition: 1s;
+}
+.stores{
+    display: flex;
+    gap: 15px;
+    margin-top: 5.3%;
+    align-items: center;
+}
+.subhero2{
+    height: max-content;
+    width: max-content;
+    padding: 20px 40px;
+    position: relative;
+    top: 70px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: white;
+}
+.minilogo{
+    width: 40px;
+    margin: 10px auto;
+}
+.nft{
+    width: 20px;
+}
+.select{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    display: block;
+}
+.cryptolist{
+    display: flex;
+    gap: 10px;
+    line-height: 40px;
+}
+.cryptoimg{
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgb(239,240,247);
+    padding: 20px;
+}
+.front{
+    display: flex;
+    background-color: rgb(239,240,247);
+    align-items: center;
+    width:350px;
+    padding: 20px;
+    border-radius: 10px;
+    height: 52px;
+}
+.frontcont{
+    display: flex;
+    gap: 5px;
+    margin-right: 10px;
+}
+.front input{
+    border-left: 1px solid rgb(183,184,189);
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    background-color: rgb(239,240,247);
+}
+.crypto .select:hover .cryptoimg{
+    display: block;
+}
+.buynsell li{
+    list-style-type: none;
+}
+.buynsell li ul li{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.underline{
+    display: flex;
+    justify-content: center;
+    width: 55px;
+    border-bottom: 5px solid rgb(3, 164, 56);
+}
+.trade{
+    display: flex;
+    gap: 150px;
+    padding-bottom: 10px;
+    margin-left:60px;
+    border-bottom:1px solid rgb(239,240,247);
+}
+.receive{
+    font-size: 13.6px;
+    font-weight: 300;
+    color: rgb(110, 113, 145);
+}
+.receive:nth-child(1){
+    margin-bottom: 10px;
+}
+.receive1{
+    font-size: 13.6px;
+    font-weight: 300;
+    color: rgb(110, 113, 145);
+}
+.straight{
+    height: 60px;
+}
+.crypto:last-child{
+    position: relative;
+    bottom: 25px;
+}
+.crypto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.body{
+    height: 155vh;
+    display: flex;
+    flex-direction: column;
+}
+.step h2{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+}
+.step p{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    width: 300px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    position: relative;
+    right: 70px;
+}
+.bodycont{
+    width: 800px;
+    margin: 77px 253px;
+    display: flex;
+    gap: 20px;
+}
+.step{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.steppic{
+    width: 200px;
+    height: 400px;
+}
+.bodyh h1{
+    text-align: center;
+    font-size: 48px;
+    line-height: 70px;
+    font-weight: 700;
+    color: rgb(20, 20, 43);
+    margin-top: 167px;
+}
+.square{
+    width: 130px;
+    height: 138px;
+    position: relative;
+    left: 81.5vw;
+    bottom: 5.5vw;
+}
+.main{
+    max-width: 608px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(252,252,252);
+    margin: 20px auto;
+    gap: 45px;
+    padding-left: 15px;
+    padding-top: 27px;
+    justify-content: center;
+}
+.signuplogo{
+    width: 113px;
+    height: 82px;
+}
+.top h2{
+    font-weight: 700;
+    color: rgb(26, 32, 44);
+    font-size: 32px;
+    line-height: 38.4px;
+    font-family: 'Segoe UI', sans-serif;
+}
+.top{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+.top h1{
+    font-size: 44px;
+    line-height: 66px;
+    font-weight: 400;
+    color: rgb(26, 32, 44);
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+.top p{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    color: rgb(26, 32, 44);
+}
+.names{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    justify-content: start;
+}
+.row{
+    display: flex;
+    gap: 10px;   
+}
+form{
+    padding: 22px 30px;
+    display: grid;
+    gap: 20px;
+}
+.names p{
+    font-size: 14px;
+    line-height: 21px;
+    color: rgb(26, 32, 44);
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+.names input{
+    border-radius: 18px;
+    border: none;
+    color: rgb(160,174,192);
+    background-color: rgb(239,240,247);
+    font-size: 16px;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    width: 260px;
+    padding: 20px;
+    padding-left: 18px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    height: 56px;
+}
+.names input::placeholder{
+    color: rgb(160,174,192);
+}
+.names input:hover{
+    background-color: rgb(226, 232, 240);
+    transition: .5s;
+}
