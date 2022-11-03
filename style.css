@@ -5,15 +5,12 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
-::-webkit-scrollbar{
-    width:5px;
-}
-::-webkit-scrollbar-thumb{
-    background-color: rgb(145,189,145);
-}
 body{
-    max-height: 500vh;
-    width: 100%;
+    max-height: 1000vh;
+    max-width: 100vw;
+}
+.big{
+    height: 600vh;
 }
 .listtext h2{
     font-size: 14.4px;
@@ -90,7 +87,7 @@ nav{
     position: sticky;
     top: 0;
     cursor: pointer;
-    z-index: 1;
+    z-index: 10;
 }
 .arrow{
     position: relative;
@@ -651,4 +648,131 @@ form{
     color: rgb(3,164,56);
     font-weight: 600;
     font-family: 'Inter', sans-serif;
+}
+.secondpage{
+    background-color: rgb(229,246,235);
+    padding-top:150px;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.secondh{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.secondh h1{
+    font-size: 39.614px;
+    font-weight: 700;
+    width: 650px;
+    margin: 0px auto;
+    text-align: center;
+}
+.secondh p{
+    font-size: 14.2px;
+    font-weight: 300;
+    text-align: center;
+}
+.secondcont{
+    display: grid;
+    grid-template-columns: 324px 324px 324px;
+    gap: 15px;
+    position: relative;
+    justify-content: center;
+}
+.cards{
+    background-color: white;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 324px;
+    padding: 0px 10px;
+    box-shadow: 0 16px 20px rgb(50 50 50 / 10%);
+    z-index: 1;
+}
+.cards h2{
+    font-size: 19.2px;
+    font-weight: 400;
+    text-align: center;
+}
+.cards p{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+.cards img{
+    width: 80px;
+}
+.square1{
+    width: 130px;
+    height: 138px;
+    position: relative;
+    left: 180px;
+    fill: rgb(195,214,215);
+    bottom: 150px;
+}
+.thirdpage{
+    padding-top: 150px;
+    display: grid;
+    height: 120vh;
+    grid-template-rows: repeat(2, 150px);
+}
+.thirdp{
+    position: relative;
+    width: 75px;
+    left: 190px;
+    top:140px;
+}
+.thirdpageh{
+    margin: 0px auto;
+    display: flex;
+}
+.square2{
+    width: 130px;
+    height: 138px;
+    position: relative;
+    top: 40px;
+    left: 155px;
+}
+.thirdpagecont{
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    margin: 0px auto;
+}
+.box{
+    width: 480px;
+    height: 312px;
+    background: #fcfcfc;
+    box-shadow: 0 16px 20px rgba(50,50,50,.1);
+    border-radius:16px;
+    display: flex;
+    padding: 32px;
+    z-index: 1;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.box p, .box h6{
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+.quotes{
+    width: 32px;
+    height: 28px;
+}
+.thirdpageh h1{
+    font-size: 39.614px;
+    font-weight: 700;
+    width: 550px;
+    text-align: center;
+}
+.fourthpage{
+    background-color: rgb(2,138,81);
 }
