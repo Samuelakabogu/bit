@@ -12,7 +12,7 @@
     background-color: rgb(145,189,145);
 }
 body{
-    height: 200vh;
+    max-height: 200vh;
     width: 100%;
 }
 .listtext h2{
@@ -551,7 +551,7 @@ form{
     accent-color: rgb(56,161,105);
     transform: scale(1.3);
 }
-.row:nth-child(8) button{
+.btn{
     padding: 18px;
     background-color: rgb(3,164,56);
     width: 530px;
@@ -562,7 +562,7 @@ form{
     color: white;
     font-family: 'Inter', sans-serif;
 }
-.row:nth-child(9) p{
+.row2 p{
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     width: 530px;
@@ -570,12 +570,13 @@ form{
     text-align: center;
     color: rgb(26, 32, 44);
 }
-.row:nth-child(10){
+.row1{
     display: flex;
     flex-direction: column;
     max-width: 530px;
+    gap: 20px;
 }
-.row:nth-child(10) .google{
+.row1 .google{
     display: flex;
     background-color: rgb(237,242,247);
     border:1px solid rgb(220,220,220);
@@ -587,27 +588,67 @@ form{
     gap: 10px;
     padding-left: 10px;
 }
-.row:nth-child(10) .google:hover{
+.row1 .google:hover{
     background-color: rgb(226, 232, 240);
 }
-.row:nth-child(10) .google p{
+.row1 .google p{
     color: rgb(26, 32, 44);
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 24px;
 }
-.row:nth-child(10) p{
+.row1 p{
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
     margin: 0px auto;
 }
-.row:nth-child(10) a{
+.row1 a{
     color: rgb(6,195,68);
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
     text-decoration: none;
+}
+.top1{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding-top: 1px;
+    flex-direction: column;
+    padding-right: 10px;
+}
+.top1 h1{
+    font-size: 44px;
+    line-height: 66px;
+    margin-top: 23px;
+    font-weight: 400;
+    color: rgb(26, 32, 44);
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+.top1 p{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    color: rgb(26, 32, 44);
+}
+.names h6{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    color: rgb(26, 32, 44);
+}
+.row h5{
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(3,164,56);
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
 }
