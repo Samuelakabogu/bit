@@ -6,11 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    max-height: 1000vh;
     max-width: 100vw;
-}
-.big{
-    height: 700vh;
 }
 .listtext h2{
     font-size: 14.4px;
