@@ -988,20 +988,48 @@ form{
     z-index: 200;
     position: fixed;
     top: 0;
-    bottom: 0;
-    height: 100%;
+    height: 0;
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
+    transition: all 1.7s;
     gap: 30px;
     padding: 30px;
+    padding-top: 2.6%;
+    animation-name: dropdown;
+    animation-duration: 1.5s;
 }
+/* animations */
+@keyframes dropdown{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100vh;
+    }
+}
+@keyframes opacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* animation-end */
 .top-row{
     display: flex;
     align-items: center;
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-fill-mode: both;
 }
 .dropdown-content{
     display: flex;
+    transition: all 2s;
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-fill-mode: both;
     flex-direction: column;
     gap: 50px;
     padding-top: 45px;
@@ -1012,9 +1040,9 @@ form{
     gap: 20px;
 }
 .dropdown-head{
+    width: 100%;
     display: flex;
     align-items: center;
-    gap: 87%;
 }
 .second{
     gap: 85.5%;
@@ -1029,9 +1057,17 @@ form{
     font-size: 17.92px;
     line-height: 66.9px;
     padding-left: 25px;
+    font-weight: 300;
 }
-.dropdown-content p{
+.dropdown-text{
     display: none;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 10px;
+}
+.dropdown-head img{
+    position: absolute;
+    right: 30px;
 }
 .login{
     text-align: center;
@@ -1328,6 +1364,9 @@ form{
     .secondh p{
         width: 300px;
         margin: 0px auto;
+    }
+    .dropdown{
+        padding-top: 27px;
     }
 }
 @media screen and (max-width:480px){

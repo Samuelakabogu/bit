@@ -11,7 +11,7 @@
 <body class="big">
     <nav>
         <img src="/images/Bitmamalogo.svg" alt="bitmamalogo" class="logo">
-        <div class="hamburger">
+        <div class="hamburger open">
             <img src="images/hamburger.svg" alt="pic">
         </div>
         <div class="links">
@@ -105,32 +105,36 @@
     <div class="dropdown">
         <div class="top-row">
             <img src="images/Bitmamalogo.svg" alt="pic" class="logo">
-            <div class="hamburger">
+            <div class="hamburger close">
                 <img src="images/close.svg" alt="pic">
             </div>
         </div>
         <div class="dropdown-content">
             <div class="dropdown-arrow">
-                <div class="dropdown-head">
+                <div class="dropdown-head" onclick="drop()">
                     <h2>Product</h2>
                     <img src="images/arrow.svg" alt="pic">
                 </div>
-                <p>Changera</p>
-                <p>Peer to Peer</p>
-                <p>Buy and Sell</p>
-                <p>Crypto Cards</p>
-                <p>Developers</p>
+                <div class="dropdown-text first-text">
+                    <p>Changera</p>
+                    <p>Peer to Peer</p>
+                    <p>Buy and Sell</p>
+                    <p>Crypto Cards</p>
+                    <p>Developers</p>
+                </div>
             </div>
             <div class="dropdown-arrow">
-                <div class="dropdown-head second">
+                <div class="dropdown-head second" onclick="drop1()">
                     <h2>Company</h2>
                     <img src="images/arrow.svg" alt="pic">
                 </div>
-                <p>About</p>
-                <p>Career</p>
-                <p>Privacy Policy</p>
-                <p>Terms of Service</p>
-                <p>Partners Program</p>
+                <div class="dropdown-text second-text">
+                    <p>About</p>
+                    <p>Career</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Service</p>
+                    <p>Partners Program</p>
+                </div>
             </div>
             <h2>Support</h2>
             <h2>Resources</h2>
@@ -330,5 +334,6 @@
             <p>All rights reserved</p>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
