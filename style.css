@@ -447,15 +447,19 @@ span{
     display: flex;
     flex-direction: column;
     gap: 7px;
+    width: 39%;
     justify-content: start;
 }
 .row{
     display: flex;
     gap: 10px;   
+    width: 100%;
 }
 form{
     padding: 22px 30px;
-    display: grid;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
     gap: 20px;
 }
 .names p{
@@ -474,7 +478,7 @@ form{
     border: 3px solid rgb(239,240,247);
     outline: none;
     font-family: 'Inter', sans-serif;
-    width: 260px;
+    width: 100%;
     padding: 20px;
     padding-left: 18px;
     display: flex;
@@ -495,13 +499,15 @@ form{
     transition: .5s;
 }
 .row .names .longbar{
-    width:530px;
+    width:204%;
 }
 .row:nth-child(3){
     margin-top: 10px;
 }
 .phone{
     display: flex;
+    width: 100%;
+    align-items: center;
 }
 .phone select{
     padding: 10px;
@@ -534,7 +540,7 @@ form{
 .phone input{
     padding: 20px;
     padding-left: 150px;
-    width: 525px;
+    width: 100%;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     position: relative;
@@ -564,7 +570,7 @@ form{
 .row:nth-child(6) select{
     padding: 20px;
     padding-left: 20px;
-    width: 530px;
+    width: 80%;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     border-radius: 16px;
@@ -584,10 +590,16 @@ form{
     accent-color: rgb(56,161,105);
     transform: scale(1.3);
 }
+.signup_page::-webkit-scrollbar{
+    width: 6px;
+}
+.signup_page::-webkit-scrollbar-thumb{
+    background-color: rgb(152,217,174);
+}
 .btn{
     padding: 18px;
     background-color: rgb(3,164,56);
-    width: 530px;
+    width: 80%;
     font-size: 16px;
     border: none;
     font-weight: 600;
@@ -598,7 +610,7 @@ form{
 .row2 p{
     font-family: 'Inter', sans-serif;
     font-size: 14px;
-    width: 530px;
+    width: 100%;
     line-height: 21px;
     text-align: center;
     color: rgb(26, 32, 44);
@@ -1292,7 +1304,7 @@ form{
     .hero{
         height: max-content;
         padding-bottom: 100px;
-    }
+    }    
     .scroll{
         bottom: -40px;
     }
@@ -1350,8 +1362,21 @@ form{
     .lastcont p{
         text-align: center;
     }
+    form{
+        padding: 0;
+    }
+    .main{
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0px;
+        padding: 0px 20px;
+    }
 }
 @media screen and (max-width:540px){
+    .signup_page{
+        padding: 20px 0;
+        padding-bottom: 30px;
+    }
     .bodyh h1{
         width: 100%;
     }
@@ -1370,7 +1395,75 @@ form{
     }
 }
 @media screen and (max-width:480px){
+    .signup_page{
+        padding-top: 30px;
+    }
+    .top h1, .top1 h1{
+        font-size: 32px;
+        line-height: normal;
+    }
+    .top1 h1 br{
+        display: none;
+    }
+    .top h2{
+        font-size: 24px;
+    }
+    .top p{
+        font-size: 14px;
+    }
+    .row input{
+        width: 125%;
+    }
+    .signuplogo{
+        width: 100px;
+        height: 70px;
+    }
     .fourthpage{
         height: 120vh;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .names{
+        width: 80%;
+    }
+    .row .names .longbar{
+        width: 125%;
+    }
+    .phone{
+        padding-right: 0;
+        border-radius: 20px;
+        background-color: rgb(239,240,247);
+    }
+    .phone select{
+        position: static;
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 200px;
+        left: -27px;
+        top: 0;
+    }
+    .phone input{
+        padding-left: 0;
+        right: 0;
+    }
+    .news-letter{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        padding: 15px 0;
+        align-items: center;
+    }
+    #news{
+        width: 20px;
+    }
+    .news-letter{
+        width: 100%;
+    }
+    .full select{
+        width: 100% !important;
+    }
+    .btn{
+        width: 100%;
     }
 }
