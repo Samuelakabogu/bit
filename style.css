@@ -256,9 +256,7 @@ span{
     width: 60px;
     text-align: center;
 }
-.buynsell p:nth-child(1){
-    border-bottom: 5px solid rgb(3,164,56);
-}
+
 .crypto{
     display: flex;
     flex-direction: column;
